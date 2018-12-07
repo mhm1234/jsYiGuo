@@ -1,0 +1,99 @@
+// footer
+.footer {
+  zoom: 1;
+  clear: both;
+  position: relative;
+  padding-bottom: 20px;
+  border-top: 1px solid #e0e0e0;
+
+  .wrap {
+      margin: 50px auto 0;
+  }
+  dl {
+      width: 190px;
+      float: left;
+      margin-left: 50px;
+      display: inline;
+
+      dt {
+          height: 23px;
+          line-height: 23px;
+          background: url(../../img/footer_icon.png) no-repeat;
+          font-size: 14px;
+          text-indent: 40px;
+      }
+      dd {
+          border-left: 1px dashed #A8A8A8;
+          padding-left: 20px;
+          height: 110px;
+          min-height: 110px;
+          margin: 15px 0 0 13px;
+
+          a {
+              color: #575556;
+              line-height: 22px;
+
+              &:hover {
+                  text-decoration: underline;
+                  color: #008842;
+              }
+          }
+      }
+  }
+  .col1 {
+      dt {
+          background-position: 0 0;
+      }
+  }
+  .col2 {
+      dt {
+          background-position: 0 -23px;
+      }
+  }
+  .col3 {
+      dt {
+          background-position: 0 -46px;
+      }
+  }
+  .col4 {
+      dt {
+          background-position: 0 -69px;
+      }
+  }
+  .col5 {
+      dt {
+          background-position: 0 -92px;
+      }
+  }
+  .service {
+      clear: both;
+      text-align: center;
+      padding: 60px 0 20px;
+      color: #008842;
+      font-size: 14px;
+
+      span {
+          display: inline-block;
+          padding: 0 10px;
+      }
+  }
+  .copyright {
+      clear: both;
+      color: #717171;
+      text-align: center;
+      line-height: 22px;
+
+      a {
+          color: #717171;
+      }
+  }
+  .authentication {
+      a {
+          display: inline-block;
+          position: relative;
+          margin: 0 10px;
+          zoom: 1;
+          vertical-align: middle;
+      }
+  }
+}

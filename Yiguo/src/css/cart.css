@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.steps {
+  float: right;
+  padding-top: 20px;
+  margin-right: 40px;
+}
+
+.steps li {
+  position: relative;
+  float: left;
+}
+
+.steps li span {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  right: -62px;
+  color: #333;
+}
+
+.steps li i {
+  width: 165px;
+  height: 6px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-width: 1px 0;
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.steps li .b2 {
+  background-position: -42px 0;
+}
+
+.steps li .b3 {
+  background-position: -84px 0;
+}
+
+.steps li b {
+  background: url(../img/order-step.png) no-repeat;
+  width: 36px;
+  height: 36px;
+  display: block;
+  float: left;
+}
+
+.steps .on .b1 {
+  background-position: 0 -44px;
+}
+
+.steps .on span {
+  color: #008842;
+}
+
+.cart,
+.order {
+  margin-top: 20px;
+}
+
+.cart-none {
+  border: 1px solid #e3e6e0;
+  background: #fff;
+  line-height: 30px;
+  padding: 70px 0;
+}
+
+.cart-none p {
+  height: 280px;
+  font-size: 14px;
+  text-align: center;
+  background: url(../img/none-bg.jpg) no-repeat center bottom;
+}
+
+.cart-none p b {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.cart-none p b a {
+  margin-left: 15px;
+}
+
+a {
+  color: #008842;
+}
+
+.preferential-buy {
+  position: relative;
+  border: 1px solid #e3e6e0;
+  margin-top: 25px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.footer {
+  margin-top: 50px;
+}

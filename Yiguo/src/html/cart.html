@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/foot.css">
+    <link rel="stylesheet" href="../css/cartlist.css">
+</head>
+
+<body>
+    <div class="site-nav id=" site-nav">
+        <div class="wrap">
+            <!--左边工具栏-->
+            <ul class="fl">
+                <li class="m1">欢迎光临易果生鲜！</li>
+                <!--送货城市-->
+                <li class="city-clearfix current">
+                    <div class="city-sz">配送至:</div>
+                    <div class="city-tit">
+                        <a class="city-name" href="javascript:void(0)">上海<s></s></a>
+                    </div>
+
+                </li>
+                <!--送货城市结束-->
+            </ul>
+            <!--右边工具栏-->
+            <ul class="fr">
+                <li class="TEL"><a rel="nofollow" href="##" target="_blank"><i></i>礼品兑换券入口</a></li>
+                <li class="pay"><a rel="nofollow" href="##" target="_blank"><i></i>储值卡</a></li>
+
+                <li class="mobile">
+                    <div class="tit"><a href="javascript:void(0)"><i></i>手机易果<s></s></a></div>
+                    <div class="con">
+                        <div class="item"><img src="http://static01.yiguo.com/www/images/header/qrcode_app.jpg" width="125"
+                                height="125"><span>扫一扫下载APP</span></div>
+                        <div class="item"><img src="http://static01.yiguo.com/www/images/header/qrcode_wechat.jpg"
+                                width="125" height="125"><span>易果生鲜微信</span></div>
+                    </div>
+                </li>
+                <li class="myyiguo">
+                    <div class="tit"><a rel="nofollow" href="##" target="_blank"><i></i>我的易果<s></s></a></div>
+                    <div class="con">
+                        <a rel="nofollow" href="##">我的订单</a>
+                        <a rel="nofollow" href="##">我的优惠券<b id="coupon">0</b></a>
+                        <a rel="nofollow" href="##">我的收藏</a>
+                        <a rel="nofollow" href="##">我的悠币</a>
+                        <a rel="nofollow" href="##">我的退换货</a>
+                        <a rel="nofollow" href="##">预存款查询</a>
+                        <a rel="nofollow" href="##">立即充值</a>
+                        <a rel="nofollow" href="javascript:;" class="logout" style="display:none;">退出</a>
+                    </div>
+                </li>
+                <li id="_logout" style="display:none"><a href="javascript:;" class="logout">[退出]</a></li>
+                <li id="_loginname" style="display:none"><a rel="nofollow" href="##"></a></li>
+                <li id="_register" style="display:block">
+                    <a rel="nofollow" href="./html/register.html">[注册]</a></li>
+                <li id="_login" style="display:block">
+                    <a rel="nofollow" href="./html/login.html">[登录]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 start -->
+    <div class="header clearfix">
+        <div class="wrap">
+            <div class="logo">
+                <a href="../index.html"></a>
+            </div>
+            <div class="steps">
+                <ul>
+                    <li class="on"><b class="b1"></b><span>我的购物车</span></li>
+                    <li><i></i><b class="b2"></b><span>填写订单信息</span></li>
+                    <li><i></i><b class="b3"></b><span>成功提交订单</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 end -->
+
+    <!--购物车  start-->
+    <div class="cart">
+        <div class="wrap">
+            <!--购物车空-->
+            <div class="cart-none" style="display:none;">
+                <p>
+                    <b>购物车是空的，去买点东西吧！<a href="../index.html">继续逛逛&gt;&gt;</a></b>
+                    <br>您还尚未<a href="login.html">登录</a>
+                </p>
+            </div>
+            <!--购物车列表-->
+            <h2>我的购物车</h2>
+            <div class="cart-alert">
+                <div class="cart-header">
+                    <table class="cart-table">
+                        <tbody>
+                            <tr>
+                                <th class="cart-t-check"><label><input type="checkbox" checked="checked" class="chkAll">全选</label></th>
+                                <th class="cart-t-info">商品信息</th>
+                                <th class="cart-t-ub" style="width:75px;">悠币</th>
+                                <th class="cart-t-price">单价</th>
+                                <th class="cart-t-num">购买数量</th>
+                                <th class="cart-t-total">合计</th>
+                                <th class="cart-t-spec">规格</th>
+                                <th class="cart-t-opera">操作</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-list" id="theInsulationCan">
+                    <table class="cart-table">
+                        <tbody>
+                            <!-- <tr>
+                                    <td class="cart-t-check"><input type="checkbox" checked="checked"></td>
+                                    <td class="cart-t-img"><a href="javascript:void(0)"><img src="http://img13.yiguoimg.com/d/items/2018/180807/9288727914259719_300.jpg"></a></td>
+                                     <td class="cart-t-info"><a href="javascript:void(0)">SunMoon泰国金枕头冷冻榴莲果肉300g*3</a></td>
+                                    <td class="cart-t-ub" style="width:75px;"></td>
+                                     <td class="cart-t-price">￥139.00</td>
+                                    <td class="cart-t-num">
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement"></a>
+                                        <input type="text" class="itxt" oldnum="1" value="1">
+                                        <a href="javascript:void(0);" class="increment"></a>
+                                    </div>
+                                </td>
+                                <td class="cart-t-total">￥<span>139.00</span></td>
+                                <td class="cart-t-spec">300g/盒*3</td>
+                                <td class="cart-t-opera">
+                                    <a href="javascript:void(0);">移入收藏</a>
+                                    <br>
+                                    <a href="javascript:void(0);">删除</a>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <div id="theCart" style="display:none;">
+                        <span id="theTotalUB">0</span>
+                        <span id="theTotalPrice">99.90</span>
+                    </div>
+
+                </div>
+                <div class="cart-footer clearfix settle">
+                    <div class="wrap">
+                        <div class="fl">
+                            <label><input type="checkbox" checked="checked" class="chkAll">全选</label>
+                        <a href="###" class="del-checked"><i></i>删除选中的商品</a>
+                        <a href="###" class="clear-cart">清空购物车</a>
+                        </div>
+                        <div class="fr">
+                            <span class="fs14">总价：<em>￥<span class="allMoney">00.00</span></em></span>
+                            <input id="SelectedCommIds" name="SelectedCommIds" type="hidden" value="">
+
+                            <a href="###" class="btn" id="btnSubmit" name="btnSubmit" style="cursor:pointer;">去结算</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end-->
+
+    <!-- 尾部 start -->
+    <div class="footer">
+        <div class="wrap">
+            <dl class="col1">
+                <dt>新手指南</dt>
+                <dd>
+                    <p><a href="/help/registersteps.html">账户注册</a></p>
+                    <p><a href="/help/gouwuliucheng.html">购物流程</a></p>
+                    <p><a href="/help/ordering.html">订购方式</a></p>
+                    <p><a href="/help/ubremark.html">悠币说明</a></p>
+                    <p><a href="http://www.yiguo.com/activity/sale/2999">会员等级<i class="ml5" style="display: none;"><img
+                                    src="http://img06.yiguoimg.com/e/web/170315/00941/154425/icon-new.png"></i></a></p>
+
+                </dd>
+            </dl>
+            <dl class="col2">
+                <dt>付款方式</dt>
+                <dd>
+                    <p><a href="/help/payment.html">支付方式</a>/<a href="/help/invoiceremark.html">发票说明</a></p>
+                    <p><a href="/help/chongzhiliucheng.html">充值说明</a><a href="/help/usechuzhika.html">/储值卡说明</a></p>
+                    <p><a href="/help/usegiftcard.html">优惠代码/礼品卡说明</a></p>
+                    <p><a href="/help/cardbuynotes.html">卡券购买章程</a></p>
+                </dd>
+            </dl>
+            <dl class="col3">
+                <dt>配送方式</dt>
+                <dd>
+                    <p><a href="/help/sendyuefei.html">配送运费</a></p>
+                    <p><a href="/help/sendquyu.html">配送范围</a></p>
+                    <p><a href="/help/sendtime.html">配送时间</a></p>
+                </dd>
+            </dl>
+            <dl class="col4">
+                <dt>售后服务</dt>
+                <dd>
+                    <p><a href="/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                    <p><a href="/help/huanhuolc.html">退换货流程</a></p>
+                    <p><a href="/help/qa.html">常见问题</a></p>
+                    <p><a href="/help/quicknessrefund.html">极速退款</a></p>
+                    <p>
+                    </p>
+                    <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+                </dd>
+            </dl>
+            <dl class="col5">
+                <dt>关于我们</dt>
+                <dd>
+                    <p><a href="/help/introduction.html">公司介绍</a></p>
+                    <p><a href="/help/contact.html">联系我们</a></p>
+                    <p><a href="/help/procooperation.html">业务合作</a></p>
+                    <p><a href="/help/chengxinjubao.html">诚信举报</a></p>
+                    <p><a href="http://yiguo.zhiye.com/home" target="_blank" rel="nofollow">人才招聘</a></p>
+                    <p><a href="/help/friendurl.html">友情链接</a></p>
+
+                </dd>
+            </dl>
+            <div class="service"><span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span><span>周一至周日 9:00-21:00</span></div>
+            <div class="copyright">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p> <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">沪ICP备09008015号 </a>
+                    Copyright ©
+                    2005-2018 <a href="http://www.yiguo.com/">上海易果电子商务有限公司</a>版权所有</p>
+                <p class="authentication">
+                    <a href="http://www.yiguo.com/legal" target="_blank" rel="nofollow"><img src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png"></a>
+                    <a href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow"><img src="http://img05.yiguoimg.com/e/web/160420/01632/141253/2517491005058doc.png"
+                            height="47"></a>
+                    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424"
+                        target="_blank"><img src="http://img03.yiguo.com/images/footer_copy.gif" width="47px" height="47px"></a>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002"
+                        style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;"><img src="http://www.beian.gov.cn/file/ghs.png"
+                            style="float: left;"><span style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备
+                            31010502000002号</span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 end -->
+</body>
+
+</html>
+<script src="../js/lib/jquery-1.11.3.js"></script>
+<script src="../js/js/cart.js"></script>

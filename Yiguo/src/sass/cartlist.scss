@@ -1,0 +1,289 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+    list-style-type: none;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.cart {
+    h2 {
+        font-weight: normal;
+        height: 38px;
+        line-height: 38px;
+        background-color: #fff;
+        background-position: 0 0;
+        border-bottom: 2px solid #05984d;
+        text-indent: -9999em;
+        position: relative;
+    }
+}
+
+.cart-alert {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    th {
+        height: 40px;
+        background-color: #f1f1f1;
+        font: 12px/40px Simsun;
+        color: #262626;
+        text-align: center;
+        padding: 0 10px;
+        .cart-t-check {
+            width: 120px;
+            text-align: left;
+            padding-left: 49px;
+        }
+    }
+    .cart-t-price {
+        width: 100px;
+        color: #262626;
+        font-size: 14px;
+        line-height: 1em;
+    }
+    .cart-t-num {
+        width: 110px;
+        color: #262626;
+        font: 12px/1em Simsun;
+    }
+    .cart-t-total {
+        width: 110px;
+        color: #e93005;
+        font-size: 14px;
+        line-height: 1em;
+    }
+    .cart-t-spec {
+        width: 110px;
+        color: #262626;
+        font: 12px/1em Simsun;
+    }
+    .cart-t-opera {
+        width: 110px;
+        color: #262626;
+        font: 12px/2em Simsun;
+    }
+    th.cart-t-check,
+    td.cart-t-check {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+.cart-list {
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ebebeb;
+        margin-bottom: 10px;
+    }
+    td {
+        border-top: 1px solid #ebebeb;
+        padding: 10px;
+        text-align: center;
+        img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ebebeb;
+            position: relative;
+        }
+        .cart-t-img {
+            width: 80px;
+            position: relative;
+        }
+        .cart-t-info {
+            text-align: left;
+            a {
+                font: 14px/2.4em Simsun;
+            }
+        }
+        .cart-t-price {
+            width: 100px;
+            color: #262626;
+            font-size: 14px;
+            line-height: 1em;
+        }
+        .red {
+            color: #e8380d;
+        }
+        .cart-t-num {
+            width: 110px;
+            color: #262626;
+            font: 12px/1em Simsun;
+        }
+    }
+    .quantity-form {
+        position: relative;
+        overflow: hidden;
+        width: 90px;
+        height: 30px;
+        .decrement,
+        .increment {
+            margin: 0;
+            width: 18px;
+            height: 24px;
+        }
+        .decrement {
+            background-image: url(../img/bg_cart.png);
+            background-repeat: no-repeat;
+            float: left;
+            background-position: 0 -40px;
+            margin: 0;
+            width: 18px;
+            height: 24px;
+        }
+        .itxt {
+            position: absolute;
+            left: 22px;
+            top: 0;
+            border: 1px solid #cacbcb;
+            width: 42px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+            font-size: 12px;
+            font-family: verdana;
+            color: #333;
+            -webkit-appearance: none;
+        }
+        .increment {
+            background-image: url(../img/bg_cart.png);
+            background-repeat: no-repeat;
+            float: right;
+            background-position: -20px -40px;
+        }
+    }
+}
+
+.cart-t-total {
+    width: 110px;
+    color: #e93005;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.cart-t-spec {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun;
+}
+
+.cart-t-opera {
+    width: 110px;
+    color: #262626;
+    font: 12px/2em Simsun;
+}
+
+.cart-footer {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    line-height: 1em;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+    .wrap {
+        width: 100%;
+    }
+    .fl {
+        float: left;
+    }
+    label {
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    input {
+        margin-right: 5px;
+    }
+    a {
+        font: 12px/40px Simsun;
+        margin-left: 20px;
+        .cart-footer a i {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 14px;
+            height: 16px;
+            background-position: -100px -40px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    }
+    .fr {
+        float: right
+    }
+    .cart-footer {
+        span {
+            margin-right: 20px;
+        }
+        .fs14 {
+            font-size: 14px;
+        }
+    }
+    em {
+        color: #ff5317;
+        font-weight: bold;
+        margin: 0 5px;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 1em;
+    }
+    .btn {
+        font: bold 18px/1em "微软雅黑";
+        background-color: #ff5317;
+        color: #fff;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-left: 0;
+    }
+}

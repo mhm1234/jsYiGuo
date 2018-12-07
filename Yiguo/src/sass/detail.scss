@@ -1,0 +1,663 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+    list-style-type: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+//center
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.catalogs-list {
+    display: none;
+}
+
+.catalogs-title {
+    a {
+        overflow: hidden;
+        font: bold 15px/16px "Microsoft YaHei";
+        color: #fff;
+        display: block;
+        height: 16px;
+        padding: 11px 0;
+        _padding: 11px 0;
+    }
+}
+
+.nav-items {
+    overflow: hidden;
+    float: left;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+    ul {
+        li {
+            float: left;
+            width: 115px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+// content
+.content {
+    margin-bottom: 20px;
+}
+
+.pic-preview {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 600px;
+}
+
+.pic-big {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.product-info {
+    width: 680px;
+    margin-left: 520px;
+}
+
+.summary-name {
+    margin: 0 85px 20px 0;
+    h1 {
+        font: normal 26px "Microsoft YaHei";
+    }
+    p {
+        height: 40px;
+        margin-top: 5px;
+        color: #777;
+        font: normal 16px/20px "Microsoft YaHei";
+    }
+}
+
+.summary-price {
+    height: 70px;
+    padding: 10px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.pro-price {
+    float: left;
+    height: 70px;
+    width: 423px;
+    span {
+        display: inline-block;
+    }
+    .tt {
+        width: 60px;
+    }
+    em {
+        padding: 0 5px;
+        font-size: 18px;
+        color: #ff0000;
+        font-style: normal;
+    }
+    strong {
+        color: #ff0000;
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
+
+.pro-tel {
+    position: absolute;
+    right: 160px;
+    top: 5px;
+    p {
+        float: left;
+        margin-top: 53px;
+        margin-right: 10px;
+    }
+    i {
+        display: inline-block;
+        width: 8px;
+        height: 14px;
+        background: url(../../img/icon-tel.png) no-repeat center;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+    strong {
+        font-weight: normal;
+        color: #11b57c;
+        margin-left: 10px;
+    }
+    .code {
+        float: left;
+        width: 73px;
+        height: 73px;
+        padding: 3px 4px 4px 10px;
+        background: url(../../img/bg-code.png) no-repeat;
+        img {
+            width: 73px;
+            height: 73px;
+        }
+    }
+}
+
+.pro-review {
+    float: right;
+    text-align: center;
+    p {
+        line-height: 22px;
+        color: #999;
+    }
+    b {
+        color: #e8380d;
+        font-size: 18px;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+    a {
+        color: #999;
+    }
+    span {
+        padding: 0 5px;
+    }
+}
+
+.pro-m2 {
+    color: #999999;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.summary-other {
+    margin-top: 20px;
+    .left {
+        float: left;
+        width: 529px;
+        padding-right: 20px;
+        border-right: 1px solid #d9d9d9;
+    }
+    .pro-service {
+        padding-left: 10px;
+        color: #999;
+        margin-bottom: 20px;
+        b {
+            color: #008842;
+        }
+    }
+    .dt {
+        float: left;
+        width: 40px;
+        padding: 0 10px;
+    }
+    .dd {
+        float: left;
+        width: 468px;
+    }
+}
+
+.pro-amount {
+    margin-bottom: 20px;
+    .dt {
+        line-height: 43px;
+    }
+}
+
+.spinner {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 76px;
+    button {
+        display: block;
+        width: 18px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        float: right;
+        position: relative;
+        border: 1px solid #e2e2e2;
+        background-color: white;
+        cursor: pointer;
+    }
+    .decrease {
+        top: 21px;
+        right: 18px;
+        border-top: none;
+    }
+    input {
+        width: 39px;
+        height: 39px;
+        line-height: 41px;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        -webkit-appearance: none;
+        border: 1px solid #e2e2e2;
+        border-right: none;
+    }
+    .increase {
+        border-bottom: 1px solid #e2e2e2;
+        height: 21px;
+    }
+}
+
+.addcart {
+    float: left;
+    width: 187px;
+    height: 43px;
+    margin-left: 10px;
+    a {
+        display: block;
+        width: 187px;
+        height: 25px;
+        padding: 9px 0;
+        text-align: center;
+        font: normal 18px/25px "Microsoft YaHei";
+        color: #fff;
+        background: #008842;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    i {
+        width: 28px;
+        height: 25px;
+        margin-right: 10px;
+        vertical-align: bottom;
+        background: url(../../img/product.png) no-repeat -47px 0;
+    }
+}
+
+//产品详情
+.content {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.pic-preview {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 600px;
+}
+
+.pic-big {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.pic-thumb {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    .picList {
+        padding-top: 10px;
+        width: 500px;
+        .pic-thumb .picList ul {
+            zoom: 1;
+            margin-left: -16px;
+        }
+    }
+    li {
+        float: left;
+        overflow: hidden;
+        height: 85px;
+        width: 85px;
+        border: 1px solid #bcbcbc;
+        margin-left: 16px;
+        cursor: pointer;
+    }
+}
+
+.product-info {
+    width: 680px;
+    margin-left: 520px;
+}
+
+.summary-name {
+    margin: 0 85px 20px 0;
+    h1 {
+        font: normal 26px "Microsoft YaHei";
+    }
+    p {
+        height: 40px;
+        margin-top: 5px;
+        color: #777;
+        font: normal 16px/20px "Microsoft YaHei";
+    }
+}
+
+.summary-price {
+    height: 70px;
+    padding: 10px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.pro-price {
+    float: left;
+    height: 70px;
+    width: 423px;
+    .tt {
+        width: 60px;
+    }
+    span {
+        display: inline-block;
+    }
+    em {
+        padding: 0 5px;
+        font-size: 18px;
+        color: #ff0000;
+        font-style: normal;
+    }
+    strong {
+        color: #ff0000;
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
+
+.pro-m2 {
+    color: #999999;
+}
+
+.pro-tel {
+    position: absolute;
+    right: 160px;
+    top: 5px;
+    p {
+        float: left;
+        margin-top: 53px;
+        margin-right: 10px;
+    }
+    i {
+        display: inline-block;
+        width: 8px;
+        height: 14px;
+        background: url(../../img/icon-tel.png) no-repeat center;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+    strong {
+        font-weight: normal;
+        color: #11b57c;
+        margin-left: 10px;
+    }
+    .code {
+        float: left;
+        width: 73px;
+        height: 73px;
+        padding: 3px 4px 4px 10px;
+        background: url(../../img/bg-code.png) no-repeat;
+        img {
+            width: 73px;
+            height: 73px;
+        }
+    }
+}
+
+.pro-review {
+    float: right;
+    text-align: center;
+    p {
+        line-height: 22px;
+        color: #999;
+    }
+    b {
+        color: #e8380d;
+        font-size: 18px;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+    a {
+        color: #999;
+    }
+    .span {
+        padding: 0 5px;
+    }
+}
+
+.summary-other {
+    margin-top: 20px;
+    .left {
+        float: left;
+        width: 529px;
+        padding-right: 20px;
+        border-right: 1px solid #d9d9d9;
+    }
+    .pro-service {
+        padding-left: 10px;
+        color: #999;
+        b {
+            color: #008842;
+        }
+        .mr5 {
+            margin-right: 5px;
+        }
+    }
+    .pro-amount .dt {
+        line-height: 43px;
+    }
+    .dd {
+        float: left;
+        width: 468px;
+    }
+    spinner {
+        width: 76px;
+        .decrease {
+            top: 21px;
+            right: 18px;
+            border-top: none;
+        }
+        input {
+            width: 39px;
+            height: 39px;
+            line-height: 41px;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            -webkit-appearance: none;
+            border: 1px solid #e2e2e2;
+            border-right: none;
+        }
+        .increase {
+            border-bottom: 1px solid #e2e2e2;
+            height: 21px;
+        }
+        button {
+            display: block;
+            width: 18px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            float: right;
+            position: relative;
+            border: 1px solid #e2e2e2;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.addcart,
+.disabled {
+    float: left;
+    width: 187px;
+    height: 43px;
+    margin-left: 10px;
+}
+
+.addcart a,
+.disabled a {
+    display: block;
+    width: 187px;
+    height: 25px;
+    padding: 9px 0;
+    text-align: center;
+    font: normal 18px/25px "Microsoft YaHei";
+    color: #fff;
+    background: #008842;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.summary-other .right {
+    float: right;
+    width: 120px;
+    padding-left: 10px;
+    color: #777;
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+        }
+    }
+}
+
+.summary-other .right th {
+    padding: 5px 0;
+    width: 65px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.summary-other .right td {
+    padding-left: 5px;
+}
+
+// footer-service
+.footer-service {
+    background: #e0e0e0;
+    margin-top: 50px;
+    padding: 30px 0;
+    li {
+        float: left;
+        width: 190px;
+        height: 42px;
+        margin-left: 55px;
+        _margin-left: 44px;
+        padding-left: 55px;
+        background: url(../../img/footer_service_icon.png) no-repeat left top;
+        b {
+            display: block;
+            padding-left: 15px;
+            color: #007f4d;
+            font: normal 18px/25px "Microsoft YaHei";
+            border-left: 1px solid #a6a6a6;
+        }
+        span {
+            display: block;
+            padding-left: 15px;
+            border-left: 1px solid #a6a6a6;
+        }
+    }
+    .s1 {
+        background-position: 0 0;
+    }
+    .s2 {
+        background-position: 0 -42px;
+    }
+    .s3 {
+        background-position: 0 -84px;
+    }
+    .s4 {
+        background-position: 0 -126px;
+    }
+}
+
+//底部 服务
+.footer-service {
+    background: #e0e0e0;
+    padding: 30px 0;
+    height: 50px;
+    .wrap {
+        width: 1200px;
+        margin: 5px auto;
+    }
+    li {
+        float: left;
+        width: 190px;
+        height: 42px;
+        margin-left: 55px;
+        _margin-left: 44px;
+        padding-left: 55px;
+        background: url(../img/footer_service_icon.png) no-repeat left top;
+        b {
+            display: block;
+            padding-left: 15px;
+            color: #007f4d;
+            font: normal 18px/25px "Microsoft YaHei";
+            border-left: 1px solid #a6a6a6;
+        }
+        span {
+            display: block;
+            padding-left: 15px;
+            border-left: 1px solid #a6a6a6;
+        }
+    }
+    .s1 {
+        background-position: 0 0;
+    }
+    .s2 {
+        background-position: 0 -42px;
+    }
+    .s3 {
+        background-position: 0 -84px;
+    }
+    .s4 {
+        background-position: 0 -126px;
+    }
+}

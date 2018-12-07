@@ -1,0 +1,240 @@
+body {
+  color: #444;
+  background: url(../img/content/bg.jpg) repeat;
+  font-size: 12px;
+  font-family: Arial, Verdana, "\5b8b\4f53";
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: none;
+}
+
+input[type=checkbox] {
+  margin-right: 9px;
+  height: 14px;
+  width: 14px;
+  vertical-align: -1px;
+}
+
+.w {
+  background: #f7f8f8;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.right {
+  text-align: right;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.green {
+  color: #008842;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.header {
+  border: none;
+  background: #e0e0e0;
+  height: 70px;
+}
+
+.header .wrap {
+  padding: 15px 0 5px 0;
+  width: 1200px;
+  margin: auto;
+}
+
+.header .logo {
+  position: relative;
+  width: 280px;
+  margin-right: 10px;
+}
+
+.header .logo a {
+  float: left;
+  display: block;
+  width: 145px;
+  height: 50px;
+  background-size: auto 100%;
+  background: url("../img/header/logo.png") no-repeat left top;
+}
+
+.header .logo .h-tit {
+  color: #008842;
+  position: absolute;
+  left: 238px;
+  top: 6px;
+  font: 28px/1 Microsoft YaHei;
+  white-space: nowrap;
+}
+
+.register {
+  padding-top: 54px;
+}
+
+.register .tab-content {
+  height: 600px;
+}
+
+.register .tab-content .tab-pane {
+  border: 1px solid #c4dfb1;
+  background-color: #fff;
+  padding: 40px 0 50px;
+}
+
+.register .fr {
+  position: relative;
+  height: 340px;
+  width: 330px;
+  text-align: center;
+  padding-top: 50px;
+  font: 14px/56px "Microsoft YaHei";
+}
+
+.register .fr .rimg {
+  position: absolute;
+  left: -140px;
+  top: 70px;
+}
+
+.register p {
+  margin-bottom: 29px;
+  font: 14px Arial, "Microsoft YaHei";
+}
+
+.register .field-name {
+  display: inline-block;
+  width: 220px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.register .input {
+  margin-right: 20px;
+  border: 1px solid #c1c1c1;
+  background-color: #fff;
+  height: 38px;
+  vertical-align: middle;
+  padding-left: 14px;
+  width: 290px;
+  font: 14px/38px "Microsoft YaHei";
+}
+
+.register .input-yzm {
+  width: 147px;
+}
+
+.tabbable {
+  position: relative;
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+.tabbable:before, .tabbable:after {
+  display: table;
+  content: "";
+}
+
+.tabbable .right {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  font: 14px/1 "Microsoft YaHei";
+}
+
+.tabbable .right .orange {
+  margin-right: 36px;
+  color: #ef760a;
+  text-decoration: underline;
+}
+
+.tabbable:after {
+  clear: both;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.gray {
+  color: #666666;
+}
+
+.input-phone {
+  background-image: url(../../img/content/bg_input.png);
+  background-repeat: no-repeat;
+  background-position: 276px -30px;
+}
+
+.input-key {
+  background-image: url(../../img/content/bg_input.png);
+  background-repeat: no-repeat;
+  background-position: 276px -70px;
+}
+
+.btn-yzm {
+  display: inline-block;
+  width: 121px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  background-color: #f7f7f7;
+  border: 1px solid #c1c1c1;
+  color: #008842;
+  margin-right: 20px;
+}
+
+.btn-green-l,
+.btn-green-s,
+.btn-orange-s {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  color: #fff !important;
+  font: 18px/50px "Microsoft YaHei";
+}
+
+.btn-green-l,
+.btn-green-s {
+  background: #008842;
+}
+
+.btn-green-l:hover,
+.btn-green-s:hover {
+  background: #09964e;
+}
+
+.btn-green-l {
+  width: 306px;
+}
+
+input:disabled {
+  background-color: #faffbd !important;
+  background-image: none !important;
+  color: black !important;
+}
+
+.footer {
+  margin-top: 30px;
+}

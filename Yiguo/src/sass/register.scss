@@ -1,0 +1,229 @@
+@charset "utf-8";
+body {
+    color: #444;
+    background: url(../img/content/bg.jpg) repeat;
+    font-size: 12px;
+    font-family: Arial, Verdana, "\5b8b\4f53";
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    outline: none;
+}
+
+input[type=checkbox] {
+    margin-right: 9px;
+    height: 14px;
+    width: 14px;
+    vertical-align: -1px;
+}
+
+.w {
+    background: #f7f8f8;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.right {
+    text-align: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.green {
+    color: #008842;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+//header
+.header {
+    border: none;
+    background: #e0e0e0;
+    height: 70px;
+    .wrap {
+        padding: 15px 0 5px 0;
+        width: 1200px;
+        margin: auto;
+    }
+    .logo {
+        position: relative;
+        width: 280px;
+        margin-right: 10px;
+        a {
+            float: left;
+            display: block;
+            width: 145px;
+            height: 50px;
+            background-size: auto 100%;
+            background: url("../img/header/logo.png") no-repeat left top;
+        }
+        .h-tit {
+            color: #008842;
+            position: absolute;
+            left: 238px;
+            top: 6px;
+            font: 28px/1 Microsoft YaHei;
+            white-space: nowrap;
+        }
+    }
+}
+
+//register
+.register {
+    padding-top: 54px;
+    .tab-content {
+        height: 600px;
+        .tab-pane {
+            border: 1px solid #c4dfb1;
+            background-color: #fff;
+            padding: 40px 0 50px;
+        }
+    }
+    .fr {
+        position: relative;
+        height: 340px;
+        width: 330px;
+        text-align: center;
+        padding-top: 50px;
+        font: 14px/56px "Microsoft YaHei";
+        .rimg {
+            position: absolute;
+            left: -140px;
+            top: 70px;
+        }
+    }
+    p {
+        margin-bottom: 29px;
+        font: 14px Arial, "Microsoft YaHei";
+    }
+    .field-name {
+        display: inline-block;
+        width: 220px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .input {
+        margin-right: 20px;
+        border: 1px solid #c1c1c1;
+        background-color: #fff;
+        height: 38px;
+        vertical-align: middle;
+        padding-left: 14px;
+        width: 290px;
+        font: 14px/38px "Microsoft YaHei";
+    }
+    .input-yzm {
+        width: 147px;
+    }
+}
+
+.tabbable {
+    position: relative;
+    width: 100%;
+    margin: 10px auto 0;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    .right {
+        position: absolute;
+        top: -27px;
+        right: 0;
+        font: 14px/1 "Microsoft YaHei";
+        .orange {
+            margin-right: 36px;
+            color: #ef760a;
+            text-decoration: underline;
+        }
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.tab-content {
+    .active {
+        display: block;
+    }
+}
+
+.gray {
+    color: #666666;
+}
+
+.input-phone {
+    background-image: url(../../img/content/bg_input.png);
+    background-repeat: no-repeat;
+    background-position: 276px -30px;
+}
+
+.input-key {
+    background-image: url(../../img/content/bg_input.png);
+    background-repeat: no-repeat;
+    background-position: 276px -70px;
+}
+
+.btn-yzm {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #f7f7f7;
+    border: 1px solid #c1c1c1;
+    color: #008842;
+    margin-right: 20px;
+}
+
+.btn-green-l,
+.btn-green-s,
+.btn-orange-s {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    color: #fff !important;
+    font: 18px/50px "Microsoft YaHei";
+}
+
+.btn-green-l,
+.btn-green-s {
+    background: #008842;
+    &:hover {
+        background: #09964e;
+    }
+}
+
+.btn-green-l {
+    width: 306px;
+}
+
+input:disabled {
+    background-color: rgb(250, 255, 189) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+// 页尾
+.footer {
+    margin-top: 30px;
+}
